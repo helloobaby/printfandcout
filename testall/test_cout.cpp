@@ -25,7 +25,7 @@ void thread_proc2() {
 
 void test_cout() {
 	thread t1(thread_proc);
-	//thread t2(thread_proc2);
+	thread t2(thread_proc2);
 	t1.detach();
-	//t2.detach();
+	t2.detach();
 }
